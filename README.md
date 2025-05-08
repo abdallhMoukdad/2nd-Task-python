@@ -43,7 +43,7 @@ A complete authentication system built with Flask, featuring user registration, 
 
    ```
    git clone https://github.com/abdallhMoukdad/2nd-Task-python
-   cd flask-auth-system
+   cd 2nd-Task-python
    ```
 
 2. Create and activate a virtual environment:
@@ -63,7 +63,7 @@ A complete authentication system built with Flask, featuring user registration, 
 ## Project Structure
 
 ```
-flask-auth-system/
+2nd-Task-python/
 ├── 2nd-app.py                  # Main application file
 ├── extensions.py           # Database extension
 ├── models.py               # User model
