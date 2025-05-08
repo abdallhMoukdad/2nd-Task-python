@@ -59,25 +59,12 @@ A complete authentication system built with Flask, featuring user registration, 
    pip install -r requirements.txt
    ```
 
-4. Create a `.env` file in the project root directory with the following settings:
-   ```
-   EMAIL_HOST=smtp.gmail.com
-   EMAIL_PORT=587
-   EMAIL_USER=your-email@gmail.com
-   EMAIL_PASSWORD=your-app-password
-   EMAIL_SENDER=your-email@gmail.com
-   MAIL_SERVER=smtp.gmail.com
-   MAIL_PORT=587
-   MAIL_USERNAME=your-email@gmail.com
-   MAIL_PASSWORD=your-app-password
-   MAIL_DEFAULT_SENDER=your-email@gmail.com
-   ```
 
 ## Project Structure
 
 ```
 flask-auth-system/
-├── app.py                  # Main application file
+├── 2nd-app.py                  # Main application file
 ├── extensions.py           # Database extension
 ├── models.py               # User model
 ├── requirements.txt        # Project dependencies
@@ -89,7 +76,6 @@ flask-auth-system/
 │   ├── profile.html
 │   ├── forgot_password.html
 │   └── reset_password.html
-└── static/                 # CSS, JS, and images
 ```
 
 ## Configuration
@@ -103,7 +89,7 @@ Email settings are loaded from environment variables with sensible defaults for 
 1. Run the application:
 
    ```
-   python app.py
+   python3 2nd-app.py
    ```
 
 2. Access the web interface at `http://localhost:5000`
@@ -155,10 +141,3 @@ For production deployment:
 
 3. Configure a reverse proxy like Nginx
 
-## License
-
-[MIT License](LICENSE)
-
-## Course Information
-
-This project was developed as part of [Course Name] to demonstrate authentication systems in Flask.
