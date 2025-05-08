@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            overflow: auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .dashboard-nav {
+            background: #444;
+            padding: 10px;
+        }
+        .dashboard-nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .dashboard-nav a:hover {
+            text-decoration: underline;
+        }
+        .welcome-section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-left: 5px solid #333;
+        }
+        .dashboard-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .dashboard-card {
+            flex-basis: 48%;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .dashboard-card {
+                flex-basis: 100%;
+            }
+        }
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User Dashboard</h1>
+    </header>
+    
+    <div class="dashboard-nav">
+        <a href="/dashboard">Dashboard</a>
+        <a href="/profile-page">Profile</a>
+        <a href="/logout">Logout</a>
+    </div>
+    
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Welcome, {{ user.name }}!</h2>
+            <p>Your email: {{ user.email }}</p>
+        </div>
+        
+        <div class="dashboard-content">
+            <div class="dashboard-card">
+                <h3>Account Information</h3>
+                <p>User ID: {{ user.id }}</p>
+                <p>Email: {{ user.email }}</p>
+                <a href="/profile-page" class="btn">Edit Profile</a>
+            </div>
+            
+            <div class="dashboard-card">
+                <h3>Security Settings</h3>
+                <p>Last login: [Feature not implemented]</p>
+                <a href="#" class="btn">Change Password</a>
+            </div>
+            
+            <div class="dashboard-card">
+                <h3>Notifications</h3>
+                <p>You have no new notifications.</p>
+            </div>
+            
+            <div class="dashboard-card">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/">Home Page</a></li>
+                    <li><a href="/profile-page">View Profile</a></li>
+                    <li><a href="/logout">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

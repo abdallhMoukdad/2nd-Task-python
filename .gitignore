@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+
+# Flask
+instance/
+instance/
+.webassets-cache
+.env
+.flaskenv
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Virtual Environment
+venv/
+ENV/
+env/
+virtualenv/
+
+# IDE specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Local development configuration
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Python test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter notebooks
+.ipynb_checkpoints
+
+# Package distribution
+*.tar.gz
+*.whl
+
+# Temporary files
+*.tmp
+*.bak
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
