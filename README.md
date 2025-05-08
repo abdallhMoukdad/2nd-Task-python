@@ -80,7 +80,7 @@ A complete authentication system built with Flask, featuring user registration, 
 
 ## Configuration
 
-The application uses SQLite for development but can be configured to use other databases by changing the `SQLALCHEMY_DATABASE_URI` in `app.py`.
+The application uses SQLite for development but can be configured to use other databases by changing the `SQLALCHEMY_DATABASE_URI` in `2nd-app.py`.
 
 Email settings are loaded from environment variables with sensible defaults for development.
 
